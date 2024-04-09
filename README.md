@@ -1,4 +1,4 @@
-# interactive-rental-map
+# interactive-brewery-map
 As a consumer, I want to create an interactive webpage for advertizing Breweries for customer acsesibility, so that clients can easily view available properties with images and pricing for rent, as well as have clear contact information for each property. 
 
 This is a webpage for advertizing Breweries using an interactive map, The purpose of this webpage application is to make locating Breweries fast, easy, and affordable with clear pricing and map locations. 
