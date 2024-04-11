@@ -36,14 +36,14 @@ function onMapClick(e) {
 map.on('click', onMapClick);
 
 //brewery info 
-const brewerylist = document.getElementById('brewerylist')
+const breweryList = document.getElementById('brewerylist')
 const pages = prompt('# of pages')
 const lat = prompt('lat')
 const lng = prompt('lng')
 const search = prompt('search')
 
 const multiBrew = `https://api.openbrewerydb.org/v1/breweries?per_page=${pages}`
-const bysearch = `https://api.openbrewerydb.org/v1/breweries/search?query=${search}`
+const bySearch = `https://api.openbrewerydb.org/v1/breweries/search?query=${search}`
 const byDistance = `https://api.openbrewerydb.org/v1/breweries?by_dist=${lat},${lng}&per_page=${pages}`
 let options = {
     method: "GET"
