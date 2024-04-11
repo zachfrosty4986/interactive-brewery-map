@@ -2,3 +2,17 @@
     height: 50vh;
     width: 50vw
 }
+
+.brewery-map h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: left;
+  }
+
+nav {
+    background-color: #ffc14d;
+  }
+
+.page-footer {
+    background-color: #ffc14d;
+}
