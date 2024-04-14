@@ -9,7 +9,7 @@ Link to our website:
 
 Screenshot of the webpage:
 
-Coolaborators: Zachary Magras, Stephanie Dilolle, Vincent Camarco
+collaborators: Zachary Magras, Stephanie Dilolle, Vincent Camarco
 
 
 ACCEPTANCE CRITERIA:
