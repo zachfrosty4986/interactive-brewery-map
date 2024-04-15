@@ -6,64 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Brewsters! The Local Brewery Website</title>
 </head>
 
 <body>
-        <nav>
-            <div class="nav-wrapper">
-              <a href="#" class="brand-logo">Welcome to Brewsters</a>
-              <ul id="nav-mobile" class="color-orange right hide-on-med-and-down">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Welcome to Brewsters</a>
+            <ul id="nav-mobile" class="color-orange right hide-on-med-and-down">
                 <li><a href="sass.html">Sass</a></li>
                 <li><a href="badges.html">Components</a></li>
                 <li><a href="collapsible.html">JavaScript</a></li>
-              </ul>
-            </div>
-          </nav>
-          <main>
-            <div class="row">
-                <div class="col s12 m6">
-                  <div class="card grey darken-1">
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card grey darken-1">
                     <div class="card-content white-text">
-                      <span class="card-title">About Us</span>
-                    <p>Welcome to Brewsters! A webpage where you can easily find local breweries near you, or farther away using an interactive map! First, scrool around the map and look for pins that intrest you. Next, click onto a pin and you will be redirected to a page with specific information, including address, ratings, and reviews for the selected brewery! you will also have the option to contact one of the represenatives at that location. Please contact us using the links below to learn more about our webpage!</p>
-                    </p>
+                        <span class="card-title">About Us</span>
+                        <p>Welcome to Brewsters! A webpage where you can easily find local breweries near you, or
+                            farther away using an interactive map! First, scrool around the map and look for pins that
+                            intrest you. Next, click onto a pin and you will be redirected to a page with specific
+                            information, including address, ratings, and reviews for the selected brewery! you will also
+                            have the option to contact one of the represenatives at that location. Please contact us
+                            using the links below to learn more about our webpage!</p>
+                        </p>
                     </div>
-                  </div>
                 </div>
-              </div>
-            <section class="brewery-map">
-                <h2>Click on a Point for Specific Information</h2>
-                <div id="map"></div>
-            </section>
-        </main>
+            </div>
+        </div>
+        <section class="brewery-map">
+            <h2>Click on a Point for Specific Information</h2>
+            <div id="map"></div>
+            <ul id="brewery-list">here</ul>
+            <form id="BreweryForm">
+
+                <div>
+                    <label for="lat">lat:</label>
+                    <input type="text" id="lat">
+                </div>
+                <div>
+                    <label for="lng">lng:<label>
+                            <input type="text" id="lng">
+                </div>
+
+                <div class="modal-footer">
+                    <button id="submit">Search Breweries</button>
+                </div>
+            </form>
+            <ul id="brewery-name">Brewery Name:</ul>
+            <div id="brewery-type">Brewery Type:</div>
+            <div id="brewery-phone">Brewery Phone Number:</div>
+            <div id="brewery-address">Brewery Address:</div>
+        </section>
+    </main>
     </div>
 </body>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
 <script src="./assets/js/script.js"></script>
 <footer class="page-footer">
     <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Contact Us!</h5>
-          <p class="grey-text text-lighten-4">Phone number: 000-000-0000</p>
-          <p class="grey-text text-lighten-4">Email: email@example.com</p>
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Contact Us!</h5>
+                <p class="grey-text text-lighten-4">Phone number: 000-000-0000</p>
+                <p class="grey-text text-lighten-4">Email: email@example.com</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3"
+                            href="https://github.com/zachfrosty4986/interactive-brewery-map/tree/main"
+                            target="_blank">GitHub Repository</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="https://github.com/zachfrosty4986/interactive-brewery-map/tree/main" target="_blank">GitHub Repository</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
-      © 2024 Copyright Text
-      </div>
+        <div class="container">
+            © 2024 Copyright Text
+        </div>
     </div>
-  </footer>
+</footer>
+
+<a href="https://www.flaticon.com/free-icons/beer" title="beer icons">Beer icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/spy" title="spy icons">Spy icons created by Good Ware - Flaticon</a>
+
 </html>
