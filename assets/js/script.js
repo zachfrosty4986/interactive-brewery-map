@@ -6,6 +6,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+
 //marker pin
 const breweryIcon = {
     iconUrl: './assets/js/Brewery.png',
@@ -41,8 +42,6 @@ const geocoder = L.Control.geocoder({
     .addTo(map);
 let marker = L.marker([40, -95], searchOptions).addTo(map)
 
-
-// popup for brewery name
 let popup = L.popup()
     .setLatLng([40.7, -74])
     .setContent('test popup')
@@ -131,5 +130,31 @@ function displayText(data) {
 //     console.log(brewArray.filter(JSON.stringify(brewery)))
 // }
 
+//event listener for clicking map
+map.on('click', onMapClick);
 
+// Get the modal
+let modal = document.getElementById("myModal");
 
+// Get the button that opens the modal
+let btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
