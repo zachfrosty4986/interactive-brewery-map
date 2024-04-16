@@ -1,7 +1,8 @@
 #map {
     margin: 4px;
     height: 48vh;
-    width: 48vw
+    width: 98vw;
+    z-index: 1;
 }
 
 .brewery-map h2 {
@@ -30,7 +31,8 @@ nav {
 .leaflet-popup-content p{
   font-size: 12px;
   text-align: center;
-  
+}
+
 @import "compass";
 
 #myBtn {
@@ -45,7 +47,7 @@ nav {
   &:hover {
     border: solid 5px black;
     color: black;
-    transition: 0.5s;
+    transition: 0.1s;
   }
   
 }
