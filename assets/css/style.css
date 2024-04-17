@@ -20,7 +20,7 @@ nav {
 }
 
 #brewery-info{
-    margin: 4px;
+    margin: 84;
     border: black solid 1px;
     border-radius: 2%;
     position: relative;
@@ -30,7 +30,10 @@ nav {
 
 .leaflet-popup-content p{
   font-size: 12px;
+  font-style:oblique;
   text-align: center;
+  background-color: #ffc14d;
+  color: black;
 }
 
 @import "compass";
