@@ -1,22 +1,44 @@
-#map {
-    margin: 4px;
-    height: 48vh;
-    width: 98vw;
-    z-index: 1;
+:root {
+  --lightbeer-color: #ffc14d;
+  --darkbeer-color: #591300;
+  --lightbeer: var(--lightbeer-color);
+  --darkbeer: var(--darkbeer-color);
 }
 
+.darkmode {
+  --lightbeer-color: #ffc14d;
+  --darkbeer-color: #591300;
+  --lightbeer: var(--darkbeer-color);
+  --darkbeer: var(--lightbeer-color);
+}
+
+#map {
+  margin: 4px;
+  height: 48vh;
+  width: 98vw;
+  z-index: 1;
+}
+
+
 .brewery-map h2 {
-    font-size: 24px;
-    color: #333;
-    text-align: left;
-  }
+  font-size: 24px;
+  color: #333;
+  text-align: left;
+}
+
+#view-toggle{
+  background-color: var(--lightbeer);
+  transition: .5s;
+}
 
 nav {
-    background-color: #ffc14d;
-  }
+  background-color: var(--lightbeer);
+  transition: .5s;
+}
 
 .page-footer {
-    background-color: #ffc14d;
+  background-color: var(--lightbeer);
+  transition: .5s;
 }
 
 #brewery-info{
@@ -26,9 +48,10 @@ nav {
     position: relative;
     width: 48vw;
     display: block;
+
 }
 
-.leaflet-popup-content p{
+.leaflet-popup-content p {
   font-size: 12px;
   font-style:oblique;
   text-align: center;
@@ -43,16 +66,17 @@ nav {
   padding: 20px 35px;
   margin-top: 10px;
   border: 2px solid black;
-  background-color: #ffc14d;
+  background-color: var(--lightbeer);
+  transition: .5s;
   color: black;
   font-weight: 700;
-  
+
   &:hover {
     border: solid 5px black;
     color: black;
     transition: 0.1s;
   }
-  
+
 }
 
 #searchButton {
@@ -60,30 +84,40 @@ nav {
   padding: 10px 18px;
   margin-top: 10px;
   border: 2px solid black;
-  background-color: #ffc14d;
+  background-color: var(--lightbeer);
+  transition: .5s;
   color: black;
   font-weight: 700;
 }
 
 #searchButton:hover {
   border: solid 5px black;
-    color: black;
-    transition: 0.1s;
+  color: black;
+  transition: 0.1s;
 }
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 100; /* Sit on top */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 100;
+  /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  -webkit-animation-name: fadeIn; /* Fade in the background */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
   -webkit-animation-duration: 0.4s;
   animation-name: fadeIn;
   animation-duration: 0.4s
@@ -118,11 +152,13 @@ nav {
 
 .modal-header {
   padding: 2px 16px;
-  background-color: #ffc14d;
+  background-color: var(--lightbeer);
   color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  padding: 2px 16px;
+}
 
 .modal-footer {
   padding: 20px;
@@ -132,27 +168,51 @@ nav {
 
 #modal-footer {
   color: whitesmoke;
-  background-color: #ffc14d;
+  background-color: var(--lightbeer);
   padding: 20px;
 }
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0} 
-  to {bottom: 0; opacity: 1}
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
 }
 
 @keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
 }
 
 @-webkit-keyframes fadeIn {
-  from {opacity: 0} 
-  to {opacity: 1}
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0} 
-  to {opacity: 1}
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
 }

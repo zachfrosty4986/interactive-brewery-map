@@ -132,32 +132,32 @@ window.onclick = function (event) {
     }
 }
 
+const viewToggle = document.querySelector('#view-toggle')
 
-// const viewToggle = $('view-toggle')
+let darkMode = localStorage.getItem("view-toggle")
 
-// let viewSwitch = localStorage.getItem("viewSwitch")
+const enableDarkMode = () => {
+    document.body.classList.add('darkmode');
+    localStorage.setItem('view-toggle', 'enabled');
+}
 
-// const enableDarkMode = () => {
-//     document.body.classList.add('darkmode');
-//     localStorage.setItem('view-toggle', 'enabled');
-// }
+if (darkMode === 'enabled') {
+    enableDarkMode();
+}
 
-// if (darkMode=== 'enabled') {
-//     enableDarkMode();
-// }
+const disableDarkMode = () => {
+    document.body.classList.remove('darkmode');
+    localStorage.setItem('view-toggle', null);
+}
 
-// const disableDarkMode = () => {
-//     document.body.classList.remove('darkmode');
-//     localStorage.setItem('view-toggle', null);
-// }
+viewToggle.addEventListener('click', function (event) {
+    darkMode = localStorage.getItem("view-toggle")
+    if (darkMode !== 'enabled') {
+        enableDarkMode();
+        console.log(darkMode)
+    } else {
+        disableDarkMode();
+        console.log(darkMode)
+    }
+});
 
-// viewToggle.addEventListener('click', function (event) {
-//     darkMode = localStorage.getItem("view-toggle")
-//     if (darkMode !== 'enabled') {
-//         enableDarkMode();
-//         console.log(darkMode)
-//     } else {
-//         disableDarkMode();
-//         console.log(darkMode)
-//     }
-// });
