@@ -17,8 +17,14 @@
 <body>
     <nav>
         <div class="nav-wrapper">
-            <span title="Where every pint tells a story!">Welcome to Brewsters!</span>
-            <!-- <a href="#" class="brand-logo">Welcome to Brewsters</a> -->
+            <div class="row">
+                <div class="col l11 m11 s11">
+                    <span title="Where every pint tells a story!">Welcome to Brewsters!</span>
+                </div>
+                <div class="col l1 m1 s1">
+                    <button id="view-toggle">Change view</button>
+                </div>
+            </div>
             <ul id="nav-mobile" class="color-orange right hide-on-med-and-down">
             </ul>
         </div>
@@ -26,7 +32,6 @@
     <!-- Trigger/Open The Modal -->
     <button id="myBtn">About Us</button>
 
-    <!-- <button id="view-toggle"></button> -->
     <input type="text" id="cityInput" placeholder="Enter city name">
     <button id="searchButton" onclick="searchCity()">Search</button>
 
@@ -41,35 +46,22 @@
             </div>
             <div class="modal-body">
                 <p>Welcome to Brewsters! A webpage where you can easily find local breweries near and far
-                    using an interactive map! You can scroll around the map and look for locations that interest you.You can also use the search
-                bar to enter a location. Click on a beer icon to view the name and phone number for a specific brewery.</p>
+                    using an interactive map! You can scroll around the map and look for locations that interest you.You
+                    can also use the search
+                    bar to enter a location. Click on a beer icon to view the name and phone number for a specific
+                    brewery.</p>
                 <p>Contact us using the links at the bottom of the page to learn more about our webpage!</p>
                 <p id="modal-footer">Thank You for Visiting!</p>
             </div>
             <div class="modal-footer">
                 <h3>Thank You for Visiting!</h3>
             </div>
-
         </div>
-
     </div>
     <main>
-        <!-- <div class="row">
-      <div class="col s12 m6">
-        <div class="card grey darken-1">
-          <div class="card-content white-text">
-            <span class="card-title">About Us</span>
-            <p></p>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
         <section class="brewery-map">
             <h2>Click on a Point for Specific Information</h2>
             <div id="map">
-
             </div>
         </section>
     </main>
@@ -104,7 +96,6 @@
     <div class="footer-copyright">
         <div class="container">
             © 2024 Copyright
-
         </div>
     </div>
 </footer>
