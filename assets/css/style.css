@@ -1,3 +1,6 @@
+
+@import "compass";
+
 :root {
   --lightbeer-color: #ffc14d;
   --darkbeer-color: #591300;
@@ -11,6 +14,7 @@
   --lightbeer: var(--darkbeer-color);
   --darkbeer: var(--lightbeer-color);
 }
+
 
 #map {
   margin: 4px;
@@ -32,9 +36,11 @@
 }
 
 nav {
+  font-size: 32px;
   background-color: var(--lightbeer);
   transition: .5s;
 }
+
 
 .page-footer {
   background-color: var(--lightbeer);
@@ -58,8 +64,6 @@ nav {
   background-color: #ffc14d;
   color: black;
 }
-
-@import "compass";
 
 #myBtn {
   position: relative;
