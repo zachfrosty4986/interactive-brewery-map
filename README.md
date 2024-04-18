@@ -7,7 +7,7 @@ When the user clicks on a map icon for a brewery location, they are then given c
 
 Link to our website: https://zachfrosty4986.github.io/interactive-brewery-map/
 
-Screenshot of the webpage: 
+Link to Screenshots of the webpage: https://docs.google.com/document/d/1NteMI05fzSeFeQKxebu3rcV208pEm_n_RF5PkmITgxc/edit
 
 Collaborators: Zachary Magras, Stephanie Dilolle, Vincent Camarco
 
