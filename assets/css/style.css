@@ -1,3 +1,5 @@
+@import "compass";
+
 #map {
     margin: 4px;
     height: 48vh;
@@ -13,6 +15,7 @@
 
 nav {
     background-color: #ffc14d;
+    font-size: 32px;
   }
 
 .page-footer {
@@ -32,8 +35,6 @@ nav {
   font-size: 12px;
   text-align: center;
 }
-
-@import "compass";
 
 #myBtn {
   position: relative;
