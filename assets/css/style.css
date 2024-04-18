@@ -5,6 +5,7 @@
   --darkbeer: var(--darkbeer-color);
 }
 
+/* Dark mode */
 .darkmode {
   --lightbeer-color: #ffc14d;
   --darkbeer-color: #591300;
@@ -12,6 +13,8 @@
   --darkbeer: var(--lightbeer-color);
 }
 
+
+/* Map */
 #map {
   
   height: 50vh;
@@ -31,21 +34,25 @@
   transition: .5s;
 }
 
+/* Navbar */
 nav {
   position: relative;
   font-size: 32px;
   background-color: var(--lightbeer);
   transition: .5s;
 }
+
 nav button {
   font-size: 12px;
 }
 
+/* Footer*/
 .page-footer {
   background-color: var(--lightbeer);
   transition: .5s;
 }
 
+/* Map popups for brewery info */
 #brewery-info {
   margin: 84;
   border: black solid 1px;
@@ -73,6 +80,7 @@ button:hover{
   color: black;
 }
 
+/* About Us button */
 #myBtn {
   position: relative;
   margin-left: 2px;
@@ -92,6 +100,7 @@ button:hover{
 
 }
 
+/* Search button */
 #searchButton {
   position: relative;
   padding: 10px 18px;
@@ -143,7 +152,7 @@ button:hover{
   animation-duration: 0.4s
 }
 
-/* The Close Button */
+/* Close button */
 .close {
   color: white;
   float: right;
