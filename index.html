@@ -21,7 +21,7 @@
                 <div class="col l11 m11 s11">
                     <span title="Where every pint tells a story!">Welcome to Brewsters!</span>
                 </div>
-                <div class="col l1 m1 s1">
+                <div id=togglebutton class="col l1 m1 s1">
                     <button id="view-toggle">Change view</button>
                 </div>
             </div>
@@ -31,9 +31,6 @@
     </nav>
     <!-- Trigger/Open The Modal -->
     <button id="myBtn">About Us</button>
-
-    <input type="text" id="cityInput" placeholder="Enter city name">
-    <button id="searchButton" onclick="searchCity()">Search</button>
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -60,7 +57,9 @@
     </div>
     <main>
         <section class="brewery-map">
-            <h2>Click on a Point for Specific Information</h2>
+            <h2>Start by entering a city!</h2>
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchButton" onclick="searchCity()">Search</button>
             <div id="map">
             </div>
         </section>
@@ -88,6 +87,7 @@
                     <li><a class="grey-text text-lighten-3"
                             href="https://github.com/zachfrosty4986/interactive-brewery-map/tree/main"
                             target="_blank">GitHub Repository</a></li>
+                        <li><a href="https://www.flaticon.com/free-icons/beer" title="beer icons">Beer icons created by Freepik - Flaticon</a></li>
                 </ul>
             </div>
         </div>
@@ -99,8 +99,4 @@
         </div>
     </div>
 </footer>
-
-<a href="https://www.flaticon.com/free-icons/beer" title="beer icons">Beer icons created by Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/spy" title="spy icons">Spy icons created by Good Ware - Flaticon</a>
-
 </html>
