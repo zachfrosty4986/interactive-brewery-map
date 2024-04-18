@@ -5,7 +5,7 @@ This is a webpage for advertizing Breweries using an interactive map, The purpos
 
 When the user clicks on a map icon for a brewery location, they are then redirected to a webpage for the specific Brewery. The user then can contact the owner or employees, see all the specific Breweries information for the one selected, and save the Breweries in local storage to re-visit later. 
 
-Link to our website:
+Link to our website: https://zachfrosty4986.github.io/interactive-brewery-map/
 
 Screenshot of the webpage:
 
